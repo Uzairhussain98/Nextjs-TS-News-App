@@ -1,6 +1,8 @@
 import React from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import NavLinks from "./NavLinks";
+import SearchBox from "./SearchBox";
 
 const Header = () => {
   return (
@@ -11,7 +13,7 @@ const Header = () => {
           <h1 className="font-serif text-4xl text-center">
             The{" "}
             <span className="underline decoration-7 decoration-cyan-400">
-              REACT
+              NEXT
             </span>{" "}
             News
           </h1>
@@ -24,6 +26,9 @@ const Header = () => {
           </button>
         </div>
       </div>
+      {/* NavLinks */}
+      <NavLinks />
+      <SearchBox />
     </header>
   );
 };
